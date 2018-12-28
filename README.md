@@ -20,15 +20,17 @@ httpc (get|post) [-v] (-h "k:v")* [-d inline-data] [-f file] URL
 
 Example:
 
-Server Side:    httpfs -d directory
+Server Side:   
+
+                httpfs -d directory
                 httpfs -v -d directory
                 httpfs -v -p 8080 -d directory
 
 
-Client side     httpc get -v 'http://localhost/get?course=networking&assignment=1'
+Client side     
+                
+                httpc get -v 'http://localhost/get?course=networking&assignment=1'
                 httpc post -h Content-Type:application/json --d '{"Assignment": 1}' 'http://localhost/post'
-
-
                 httpc post -v -h Content-Type:application/json --d '{"Assignment": 210}' 'http://localhost/inputBody.txt'
                 httpc post -v -h Content-Type:application/json --d '{"Assignment": 210}' 'http://localhost/xx.txt'
                 httpc get -v 'http://localhost'
