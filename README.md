@@ -8,6 +8,7 @@ There is implementation of the HTTP client using TCP Sockets. The programming li
 5. Body of the request
 
 The following presents the options of the final command line.
+
 httpc (get|post) [-v] (-h "k:v")* [-d inline-data] [-f file] URL
 1. Option -v enables a verbose output from the command-line. Verbosity could be useful for testing and debugging stages 
 2. URL determines the targeted HTTP server. It could contain parameters of the HTTP operation. For example, the URL 'https://www.google.ca/?q=hello+world' includes the parameter q with "hello world" value.
